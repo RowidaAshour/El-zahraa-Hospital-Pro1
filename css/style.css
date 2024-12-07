@@ -1,0 +1,939 @@
+
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+a{
+  text-decoration: none;
+}
+body{
+  text-transform: capitalize;
+  font-family: "DM Serif Text", serif;
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////  */
+.header{
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(4,170,165,255) ;
+overflow: auto;
+z-index:300;                                                                                 
+top: 0;
+opacity: 0.7;
+}
+.header-list{
+  list-style-type: none;
+  float: right;
+  margin-right: 50px;
+}
+.header-list li{
+  display: inline-block;
+  margin: 15px 0 0 25px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  position: relative;
+padding-bottom:3px;
+}
+.header-left{
+  float: left;
+  position: relative;
+}
+.ik1{
+  color: white;
+  font-size: 30px;
+  margin: 9px 20px 0 30px ;
+}
+.header-left input{
+  position: absolute;
+  width: 230px;
+  height: 35px;
+  border-radius: 20px;
+  top: 7px;
+  z-index: 2;
+  border: none;
+}
+.ik2{
+  z-index: 3;
+top:17px ;
+  left:90px ;
+  position: absolute;
+}
+.header-list1:after {
+  content: " " ;
+  position: absolute;
+  transition: 1s;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height:5%;
+  background-color: #567363  ;
+  border-bottom: 2px solid  #567363 ;
+}
+.header-list1:hover:after {
+  width: 100%;
+  height: 5% ;
+opacity: 1;
+}
+/* ////////////////////////////////////////////////////////////////////////)(التسميه و عند ال li  و الهافر)فكره الهافر//////////////////////////////////////// */
+.home{
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/homeback2.jpg);
+  background-repeat: no-repeat;
+   background-position: center;
+  background-size: cover ;
+ position: relative;
+}
+.home-overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0 , 0.5);
+}
+.home-content{
+  position: absolute;
+color: white;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+}
+.home-content h2{
+  font-size:50px ;
+  font-weight:900 ;
+text-transform: uppercase;
+word-spacing: 3px;
+line-height: 55px;
+}
+.home-content p{
+  font-size:20px ;
+  font-weight:500 ;
+  letter-spacing: 0.5px;
+  word-spacing: 0.7px;
+  margin: 15px 0;
+}
+.home-content button{
+  width: 120px;
+  height:50px ;
+  border: none;
+  border-radius:15px ;
+  color: black ;
+  font-size: 18px ;
+ text-transform: capitalize;
+}
+.home-btn{
+  margin-left: 10px;
+  background-color:  rgb(4,170,165,255);
+  /* ///////////////عملت لونه هناك في ال style html لانه مش راضي هنا  */
+}
+.home-content button:hover{
+  opacity: 0.7;
+}
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+ .container-help{
+  width: 80%;
+  height: 90vh;
+  margin: auto
+ }
+ .container-help > h2{
+  text-align: center;
+  font-size:40px ;
+  font-weight:700 ;
+  margin-top: 80px;
+ }
+ .help-line{
+  width: 80px;
+  height: 3px ;
+  background-color:rgb(4,170,165,255);
+  margin: auto;
+  margin-top: 15px;
+ }
+ .parent-help{
+  width: 100%;
+  overflow: auto;
+  margin-top: 100px;
+ }
+ .help-item{
+  width: 30%;
+  height:230px ;
+  float: left;
+  text-align: center;
+  border: 1px solid  rgb(4,170,165,255);
+  border-radius: 20px;
+  padding: 20px 20px;
+  position: relative;
+ }
+ .help-item-content{
+  position: relative;
+  z-index: 1;
+ }
+ .help-location{
+margin: 0 5%;
+ }
+ .help-item i{
+  color: rgb(4,170,165,255);
+  font-size: 30px;
+ }
+ .help-item:hover i{
+  color:  white;
+ }
+ .help-item h2{
+  margin: 15px 0;
+  font-size: 25px;
+  font-weight: 500;
+ }
+ .help-item:hover h2{
+  font-weight: 900;
+ }
+ .help-item p{
+font-size: 19px;
+margin-bottom: 25px;
+color: grey;
+ }
+ .help-item:hover p{
+  color: rgb(5, 5, 5);
+ }
+ .help-item a{
+ font-size: 20px;
+ color: rgb(4,170,165,255);
+ font-weight: 700;
+ }
+ .help-item:hover a {
+  font-weight: 900;
+  color: white;
+ }
+ .help-item:after{
+  content:"   ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  background-color:  rgb(4,170,165,255);
+  border-radius: 20px;
+  z-index:-10;                                                                                           
+ }
+ .help-item:hover:after{
+width: 100%;
+height: 100%;
+opacity: 0.4;
+transition: 0.6s;
+ }
+ /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.container-services{
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+background-color: #cbf5ed;
+}
+.container-services > h2{
+  font-size: 40px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding-top: 50px;
+}
+.services-line{
+  width: 80px;
+  height: 3px ;
+  background-color:rgb(4,170,165,255);
+  margin: auto;
+margin-top: 15px;
+}
+.parent-services{
+width: 80%;
+overflow: auto;
+margin: 50px auto;
+text-align: center;
+}
+.services-item{
+  float: left;
+  height: 250px;
+  width:30% ;
+  position: relative;
+}
+.services-div2 , .services-div5{
+margin: 0 5%;
+}
+.services-div4 , .services-div5 , .services-div6{
+  margin-top: 50px;
+}
+.services-item img{
+ width: 100%;
+ height: 100%;
+}
+.services-overlay {
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+color: white;
+background-color:rgba(0, 0, 0,0.4);
+visibility: hidden;
+}
+.services-item:hover .services-overlay{
+  visibility: visible;
+}
+.services-overlay h2{
+margin-top:60px ;
+text-transform: uppercase;
+font-size: 25px;
+font-weight: 700;
+color:rgb(217, 210, 210);
+}
+.services-overlay p{
+  text-transform: capitalize;
+  font-size:22px ;
+  font-weight: 500;
+  margin: 20px 0 30px 0;
+}
+.services-overlay i{
+  width:50px;
+  height: 40px;
+  border-radius: 8px;
+  background-color :white ;
+  font-size: 30px;
+  color: rgb(4,170,165,255) ;
+  line-height:40px;
+}
+.service-whatss{
+  margin-left: 8px;
+}
+/* //////////////////////////////////////////////////////////فكره ال a/i///////////////////////////////////////////////////////////// */
+.container-features{
+  width:100% ;
+  height: 80vh;
+ margin: auto;
+}
+.container-features > h2{
+  font-size: 40px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding-top: 50px;
+}
+.feaures-line{
+  width: 80px;
+  height: 3px ;
+  background-color:rgb(4,170,165,255);
+  margin: auto;
+margin-top: 15px;
+}
+.parent-features{
+  width: 80%;
+  margin: auto;
+overflow: auto;
+}
+.features-item2 , .features-item5{
+  margin: 0 5%
+}
+.features-item{
+  position: relative;
+  float: left;
+  width: 30%;
+  height: 200px;
+  border: 1px solid rgb(4,170,165,255);
+margin-top: 50px;
+padding: 20px 10px;
+border-radius: 10px;
+position: relative;
+z-index: 43;
+}
+.features-item i{
+  font-size: 30px;
+  color: rgb(4,170,165,255);
+  padding-left: 10px;
+}
+.features-item:hover i{
+  color:rgb(50, 130, 94) ;
+}
+.features-item  h2{
+  display: inline;
+ padding-left: 15px;
+}
+.features-item:hover h2{
+  color:rgb(4,170,165,255);
+}
+.features-item p{
+  margin-top: 40px;
+  text-align: center;
+  font-size: 20px;
+  opacity: 0.5;
+  color: rgb(88, 83, 83);
+}
+.features-item:hover p{
+  opacity: 1;
+  color: black;
+}
+.features-item:after{
+  content:"   ";
+  position: absolute;
+  top: 0 ;
+  left: 0 ;
+  width: 0;
+  height: 0;
+  background-color:rgb(4,170,165,255) ;
+  border-radius: 10px;
+  transition: 0.5s;
+  z-index: -20; 
+}
+/*منفعتش غير لما بدي الهافر بالسالبل */
+.features-item:hover:after {
+width: 100%;
+height: 100%;
+opacity: 0.4;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.container-choose{
+  width: 80%;
+  height: 80vh;
+  margin: auto;
+}
+.parent-choose {
+ width: 100%;
+ height: 100%;
+  overflow: auto;
+  margin-top: 100px;
+}
+.choose-image{
+float: right;
+overflow: auto;
+}
+.choose-image img{
+  width:400px;
+  height:400px;
+  margin-top: 90px ;
+}
+/* .choose-points{
+  margin: 20px 0 0 130px;
+}
+.choose-points div {
+float: left;
+width:15px;
+height: 15px;
+background-color: grey;
+border-radius: 50%;
+}
+.choose-points2{
+  margin: 0  15px;
+}
+.choose-points2:hover{
+  background-color:rgb(4,170,165,255) ;
+}
+.choose-points1:hover{
+  background-color: rgb(4,170,165,255);
+} */
+ .points .li1{
+  margin-left: 173px;
+  background-color: rgb(4,170,165,255);
+ }
+ .points li{
+display: inline-block;
+width: 15px;
+height: 15px;
+border-radius: 50%;
+background-color: grey;
+margin:10px 5px 0 0 ;
+ }
+.li2:hover{
+  background-color: rgb(4,170,165,255);
+ }
+.choose-item-left{
+  float: left;
+  margin-top: 50px;
+}
+.choose-item-left > h2{
+  font-size: 40px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding-top: 30px;
+}
+.choose-line{
+  width: 80px;
+  height: 3px ;
+  background-color:rgb(4,170,165,255);
+  margin-left:150px ;
+margin-top: 10px;
+}
+.choose-txt1{
+  font-size:20px ;
+  font-weight: 500px;
+word-spacing: 2px;
+  line-height:20px ;
+  margin: 50px 0  20px  0;
+  text-transform: capitalize;
+  color: grey;
+}
+.choose-txt2 {
+  font-size: 19px;
+  font-weight: 400;
+padding:20px;
+list-style: none;
+  /* display: inline-block; دي فكره منهم لو عايزه احركه بال margin top or bottom */
+}
+.choose-txt2 li{
+  position: relative;
+  margin: 18px 0;
+}
+.sahm1{
+ color:rgb(4,170,165,255);
+font-size:40px;
+position: absolute; 
+margin:-10px 0px 0 -15px;
+}
+/* /////////////////////////////////الاسهم ////////////الاسهم مش مضبوطه ///////////ال3 -جؤبها بال ul-li- div نقط /////////////////////////////////////////////////////////////// */
+.parent-acheivments{
+  width: 100%;
+  height: 380px;
+background:url(../images/medicine.jpg) no-repeat fixed center ;
+  background-size: cover;
+  margin: auto;
+}
+.acheivments-overlay{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0 , 0.5);
+  margin: auto;
+}
+.acheivments-content{
+  width: 80%;
+  height: 100%;
+  overflow: auto;
+  margin: auto;
+}
+.acheivments-item{
+  float: left;
+  width: 25%;
+  height: 100%;
+  text-align: center;
+  padding: 140px 0;
+  color: white;
+}
+.acheivments-item i{
+  font-size: 30px;
+  color:rgb(4,170,165,255) ;
+}
+.acheivments-item .acheivments-txt1{
+  margin-top: 13px ;
+}
+.acheivments-item p{
+  font-weight: 600;
+  font-size: large;
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.parent-price{
+  width: 100%;
+  height: 80vh;
+  margin: auto;
+}
+.parent-price > h2{
+  font-size:40px ;
+  font-weight: 700 ;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-top: 90px;
+}
+.price-line{
+  width: 80px;
+  height: 3px ;
+  background-color: rgb(4,170,165,255);
+  margin: auto;
+  margin-top:15px;
+}
+.price-content{
+width: 70%;
+height: 500px;
+overflow: auto;
+margin: auto;
+}
+.price-item2{
+  margin: 0  5%;
+}
+.price-item{
+  width: 30%;
+  border: 1px solid rgb(4,170,165,255); 
+  height: 370px;
+  float: left;
+border-radius: 15px;
+text-align: center;
+margin-top: 50px;
+padding: 30px 0;
+position: relative;
+z-index: 53;
+}
+.price-cost{
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px solid rgb(4,170,165,255);
+  margin: auto;
+  text-align: center;
+  padding-top:10px;
+  font-size: 23px;
+  font-weight: 900;
+}
+.price-cost p{
+  margin-top: -3px;
+}
+.price-item  > p{
+  font-size: 20px ;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.price-txt1{
+  margin-bottom: 25px;
+  font-weight: 700;
+
+}
+.price-item button{
+  width:150px ;
+  height: 30px;
+  border-radius: 15px;
+  border: 2px solid rgb(4,170,165,255);
+  font-weight: 500;
+  background-color: rgb(240, 230, 230);
+  margin: 30px auto;
+}
+.price-item:hover  button{
+  background-color:white;
+}
+.price-item:after{
+  content: "  ";
+  position: absolute;
+  width:100% ;
+  height:0 ;
+  top: 0 ;
+  left: 0;
+  background-color:rgb(4,170,165,255) ;
+  border-radius:15px ;
+  z-index: -50;                                            
+}
+.price-item:hover:after{
+  width:100% ;
+  height:100% ;
+  opacity: 0.4;
+  transition: 0.7s;
+}
+/* ///////////////////////بال z -index//////////////////////////لون الهافر مبيجيش ع ال button /////////////////////////////////////////////////////////////////////////////// */
+.parent-partner{
+width: 100%;
+height: 380px;
+background: url(../images/device.jpg) no-repeat fixed center;
+background-size: cover;
+margin: auto;
+position: relative;
+}
+.partner-overlay{
+  position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+background-color: rgba(0, 0, 0,0.4 );
+}
+.partner-content{
+width: 80%;
+overflow: auto;
+margin: auto;
+}
+.partner-item{
+  float: left;
+  width: 40%;
+  padding: 80px 20px;
+  overflow: auto;
+}
+.partner-item1{
+margin-left: 100px;
+}
+.partner-item img{
+  width:100px ;
+  height: 100px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 15px;
+  display: block;
+}
+.partner-desc{
+  display: inline-block;
+ text-transform: capitalize;
+ color: white;
+float: left ;
+margin-top: 30px;
+}
+.partner-desc p{
+font-size: 20px;
+font-weight: 500;
+color:whitesmoke;
+}
+.partner-txt{
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-top: 120px;
+  color: rgb(0, 0, 0);
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.container-team{
+  width: 100%;
+  height: 80vh;
+  margin: auto;
+}
+.parent-team > h2{
+  font-size:  40px ;
+  font-weight:700 ;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-top: 120px;
+}
+.team-line{
+  width: 80px;
+  height: 3px ;
+  background-color:rgb(4,170,165,255);
+  margin: auto;
+  margin-top:10px;
+}
+.team-content{
+  width: 80%;
+  height: 440px;
+  overflow: auto;
+  margin: auto;
+margin-top: 90px;
+text-align: center;
+}
+.team-item2{
+  margin: 0 5%;
+}
+.team-item{
+  width: 30%;
+  height: 100%;
+  float: left;
+background-color:rgba(194, 191, 163, 0.4);
+border-radius: 12px;
+padding: 20px 0;
+position: relative;
+}
+.team-image {
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+.team-image img{
+  width: 100%;
+margin: auto;
+}
+.team-image-overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+background-color: rgba(0, 0, 0 , 0.5);
+visibility: hidden;
+}
+.team-image-overlay a{
+  display: block;
+  color: white;
+  background-color:rgb(4,170,165,255) ;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  font-size:20px;
+}
+.team-image-overlay a i{
+  line-height: 40px;
+}
+.team-item:hover .team-image-overlay{
+  visibility: visible;
+}
+.team-desc{
+  margin-top: 20px;
+}
+.team-desc h2{
+  text-transform: capitalize;
+  color:black;
+  font-size:25px;
+}
+.team-desc p{
+  color: grey;
+  font-size:20px;
+  font-weight: 800;
+  margin-top: 20px;
+}
+.team-item:hover h2{
+color:rgb(90, 88, 88);
+}
+.team-item:hover p{
+  color:black ;
+}
+.team-item:after{
+  content:"  ";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  background-color: rgb(4,170,165,255);
+  border-radius: 12px;
+}
+.team-item:hover:after{
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  transition: 0.7s;
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.container-news{
+  width: 100%;
+  height:100vh;
+  margin: auto;
+}
+.parent-news h2{
+  font-size:40px  ;
+  font-weight: 700 ;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-top: 120px;
+}
+.news-line{
+  width: 80px ;
+  height: 3px ;
+  background-color: rgb(4,170,165,255);
+  margin: auto;
+  margin-top:10px;
+} 
+.news-content{
+width: 80%;
+height: 520px;
+margin: auto;
+overflow: auto;
+margin-top: 30px;
+text-align: center;
+}
+.news-item{
+  float: left;
+  width:30% ;
+  height:100% ;
+  border: 1px solid rgb(4,170,165,255);
+  border-radius: 8px;
+  padding: 20px 0;
+  position: relative;
+  z-index:61 ;
+}
+.news-item2{
+  margin: 0 5%;
+}
+.news-image{
+ width:80%;
+ height: 280px;
+ margin: auto;
+}
+.news-image img {
+width: 100%;
+height:100% ;
+border-radius: 10px;
+}
+.news-icons{
+margin: 20px auto;                        
+}
+.news-icons i{
+font-size: 21px;
+color:rgb(4,170,165,255);
+margin-left:10px;
+}
+.news-icons span{
+font-size:17px;
+font-weight: 500;
+}
+.news-item:hover span{
+  color: rgb(4,170,165,255) ;
+  }
+.news-desc-p1{
+  font-size:20px ;
+  font-weight: bold;
+  color:  black;
+  margin-bottom: 20px;
+}
+.news-item:hover .news-desc-p1{
+  color: grey ;
+}
+.news-desc-p2{
+  font-size: 17px;
+  font-weight: 600;
+  margin: 10px 0;
+  color: grey;
+  padding: 0 5px;
+  margin-bottom: 20px;
+}
+.news-item:hover .news-desc-p2{
+  color:black;
+}
+.news-desc a{
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(4,170,165,255);
+}
+.news-item:after{
+  position: absolute;
+  content: " ";
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  background-color:  rgb(4,170,165,255);
+  border-radius: 8px;
+  z-index:-60;                                                
+}
+.news-item:hover:after{
+ transition: 0.6s;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+/* ////////////////////////////////////المسافه بين ايفون و span//////////////////فكره  الافتر تحتهم //////////////////////////////////////////////////////////////////// */
+.container-footer{
+  width: 100%;
+  height: 330px;
+  background-color: rgb(156, 204, 206);
+  margin: auto;
+}
+.parent-footer{
+  width: 25%;
+  margin: auto;
+  height: 100%;
+  text-align: center;
+  padding: 20px 0;
+}
+.parent-footer img{
+  width: 280px;
+  height: 230px;
+  border-radius: 15px;
+}
+.footer-icons{
+  width: 500px;
+  height: 50px;
+  margin: 15px 0 15px -70px;
+  font-size:40;
+}
+.footer-icons i{
+width: 47px;
+height: 47px;
+border-radius: 50%;
+color:  rgb(156, 204, 206);
+background-color: white;
+font-size: 40px;
+line-height: 47px;
+}
+.parent-footer p{
+  opacity: 0.6;
+  font-weight: 900;
+  font-size: 15px;
+}
+.link1:hover{
+background-color:rgb(4,170,165,255);
+}
+/* //////////////////////////////////////////////////////icons .../////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////z-index: help---features -----price ------news-header -////;  */
